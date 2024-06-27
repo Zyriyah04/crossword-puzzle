@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Crossword Puzzle</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Container for the crossword grid -->
+    <div class="crossword-container" id="crossword">
+      
+    </div>
+    
+    <!-- Container for the clues -->
+    <div class="clue-container">
+        <!-- Clue for the first word -->
+        <div class="clue" id="clue1">1. Used to bind pages together (5 letters)</div>
+        <!-- Clue for the second word -->
+        <div class="clue" id="clue2">2. Tool to cut (7 letters)</div>
+        <!-- Clue for the third word -->
+        <div class="clue" id="clue3">3. Used to stick things together (4 letters)</div>
+    </div>
+    
+    
+    <div class="button-container">
+        <!-- Button to get clue for the first word -->
+        <button class="btn" onclick="getClue(1)">Get Clue for Word 1</button>
+        <!-- Button to get clue for the second word -->
+        <button class="btn" onclick="getClue(2)">Get Clue for Word 2</button>
+        <!-- Button to get clue for the third word -->
+        <button class="btn" onclick="getClue(3)">Get Clue for Word 3</button>
+        <!-- Button to check the answers -->
+        <button class="btn" onclick="checkAnswers()">Check Answers</button>
+        <!-- Button to reset the crossword -->
+        <button class="btn" onclick="resetCrossword()">Reset</button>
+    </div>
+
+    <!-- Container for the result message -->
+    <div class="result-container" id="result"></div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,83 @@
+
+body {
+    background-image: url('dino.jpg'); 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.crossword-container {
+    display: grid;
+    grid-template-columns: repeat(7, 50px); /* 7 columns for each word */
+    grid-template-rows: repeat(3, 50px); /* 3 rows for three words */
+    gap: 5px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Styling for individual crossword cells */
+.crossword-cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: lightpink;
+    position: relative;
+}
+
+/* Styling for the input fields inside crossword cells */
+.crossword-cell input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+/* Class to highlight selected cells */
+.highlight {
+    background-color: lightpink; 
+}
+
+/* Container for clues */
+.clue-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Individual clue styling with margin */
+.clue {
+    margin: 10px 0;
+}
+
+/* Styling for the buttons */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: lightgreen;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer; 
+    margin: 5px;
+}
+
+
+.result-container {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
